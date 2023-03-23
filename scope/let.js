@@ -1,0 +1,3 @@
+let faizan = () => {
+    return `gitlog`
+}
