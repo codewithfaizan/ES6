@@ -19,10 +19,4 @@ const cat = {
 
 - In this example, all the properties are stored as strings, such as name, legs, and tails. However, you can also use numbers as properties.  
 <br>
-- You can even omit the quotes for single-word string properties, as follows:
 
-const anotherObject = {
-  make: "Ford",
-  5: "five",
-  "model": "focus"
-};
