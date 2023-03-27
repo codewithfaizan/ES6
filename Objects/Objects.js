@@ -102,19 +102,19 @@
 
 // -----------manipulating complex objects------------
 
-const ourMusic = [
-    {
-        "artist": "Daft Punk",
-    "title": "Homework",
-    "release_year": 1997,
-    "formats": [ 
-      "CD", 
-      "Cassette", 
-      "LP"
-    ],
-    "gold": true
-    }
-]
+// const ourMusic = [
+//     {
+//         "artist": "Daft Punk",
+//     "title": "Homework",
+//     "release_year": 1997,
+//     "formats": [ 
+//       "CD", 
+//       "Cassette", 
+//       "LP"
+//     ],
+//     "gold": true
+//     }
+// ]
 // This is an array which contains one object inside. The object has various pieces of metadata about an album. 
 // It also has a nested formats array. If you want to add more album records, you can do this by adding records to the top level array. 
 // Objects hold data in a property, which has a key-value format. 
@@ -161,4 +161,24 @@ const ourMusic = [
 // }
 // console.log(ownProp)
 
-// -----------------------------------------------
+// --------accessing nested objects-------------------------
+
+// const myStorage = {
+//     "car": {
+//       "inside": {
+//         "glove box": "maps",
+//         "passenger seat": "crumbs"
+//        },
+//       "outside": {
+//         "trunk": "jack"
+//       }
+//     }
+//   };
+
+//   suppose you want to access the glove box property so you assign a 
+// variable to it 
+
+// const gloveboxContent = myStorage.car.inside["glove box"]
+// console.log(gloveboxContent) //maps
+
+// console.log(myStorage.car.inside["passenger seat"])
