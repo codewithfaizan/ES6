@@ -1,4 +1,70 @@
 // -------------------Objects and Object destructuring------------
+
+// -----------------Objects---------------------------------
+// const myObj = {
+//     porp1 : "val1",
+//     prop2 : "val2"
+// }
+
+// const prop1val = myObj.porp1
+// console.log(prop1val)
+
+// const prop1va2 = myObj.prop2
+// console.log(prop1va2)
+
+// --------accessing objects with variables------------
+// const dogs = {
+//     Fido : "Mutt",
+//     Hunter : "Doberman",
+//     Snoopue : "Beagle"
+// };
+
+// const myDog = "Hunter";
+// const myBreed = dogs[myDog];
+// console.log(myDog)
+// console.log(myBreed)
+
+// -------------updating an object's property ------
+
+// dogs.Hunter = "Scary Doberman";
+// console.log(dogs.Hunter)
+
+// ----------------------- adding a property----------
+
+// const ourdog = {
+//     "name" : "Camper",
+//     "legs" : 4,
+//     "tails" :1,
+// "friends" : ["everything"]
+// }
+// ourdog["bark"] = "bhau-hau"
+// console.log(ourdog)
+// ourdog["friends"].push("anything") 
+// console.log(ourdog)
+// ---------------------------------------------------
+// function Bird(){
+//     this.name = "albert";
+//     this.color = "blue";
+//     this.numLegs = 2;
+// }
+// let Con = new Bird()
+
+// console.log(Con);
+
+// let Ren = new Bird()
+// console.log(Ren
+// )
+// -------------------------------------------------
+// some more exapmles
+// function Member(name,age) {
+//     this.name = name;
+//     this.age = age
+
+// }
+// /------------------------------------------
+// let Candidate1 = new Member("Ravi",32)
+// console.log(Candidate1.name, Candidate1.age)
+// console.log(Candidate1.age)
 // let Bird = {
 //     name : "alex",
 //     color : "blue",
@@ -23,30 +89,37 @@
 
 // console.log(Dog.sayName())
 
-// ---------------------------------------------------
-// function Bird(){
-//     this.name = "albert";
-//     this.color = "blue";
-//     this.numLegs =2;
+// ---------------testing objects ----------------
+// function checkObj(obj, checkProp) {
+//    if (obj.hasOwnProperty(checkProp)) {
+//       return obj[checkProp];
+//     } else {
+//       return "Not Found";
 // }
-// let Con = new Bird()
+//   }
+// checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")
 
-// console.log(Con);
 
-// let Ren = new Bird()
-// console.log(Ren
-// )
-// -------------------------------------------------
+// -----------manipulating complex objects------------
 
-// function Member(name,age) {
-//     this.name = name;
-//     this.age = age
+const ourMusic = [
+    {
+        "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+    }
+]
+// This is an array which contains one object inside. The object has various pieces of metadata about an album. 
+// It also has a nested formats array. If you want to add more album records, you can do this by adding records to the top level array. 
+// Objects hold data in a property, which has a key-value format. 
+// In the example above, "artist": "Daft Punk" is a property that has a key of artist and a value of Daft Punk.
 
-// }
-
-// let Candidate1 = new Member("Ravi",32)
-// console.log(Candidate1.name, Candidate1.age)
-// console.log(Candidate1.age)
 
 // ------verify ------------------------------------
 
