@@ -2,8 +2,9 @@
 
 // -----------------Objects---------------------------------
 // const myObj = {
-//     porp1 : "val1",
-//     prop2 : "val2"
+//     porp1 : "val1",         //  key : value
+//     prop2 : "val2",         //  key : value
+//     prop3 : true              //  key is prop1 and value is "val2" that is string, to check simply console.log(typeof)
 // }
 
 // const prop1val = myObj.porp1
@@ -11,17 +12,28 @@
 
 // const prop1va2 = myObj.prop2
 // console.log(prop1va2)
+// console.log(typeof(myObj.prop3))
+// console.log(typeof(myObj.prop3))
 
 // --------accessing objects with variables------------
-// const dogs = {
-//     Fido : "Mutt",
-//     Hunter : "Doberman",
-//     Snoopue : "Beagle"
-// };
+const dogs = {
+    Fido : "Mutt",
+    Hunter : "Doberman",
+    Snoopue : "Beagle",
+    5 : 10
+}
 
-// const myDog = "Hunter";
-// const myBreed = dogs[myDog];
-// console.log(myDog)
+// console.log(dogs)
+// const myDog = "Hunter";     // here a variable is declared myDog and the key Hunter is assigned to it 
+                                    // which now takes the key value pair inside a variable
+// const myBreed = dogs[myDog];        
+
+// // console.log(typeof(myDog))
+
+// const num = 5;
+// const number = dogs[5]
+// console.log(num)
+// console.log(number)
 // console.log(myBreed)
 
 // -------------updating an object's property ------
@@ -29,6 +41,7 @@
 // dogs.Hunter = "Scary Doberman";
 // console.log(dogs.Hunter)
 
+// console.log(dogs)
 // ----------------------- adding a property----------
 
 // const ourdog = {
@@ -37,11 +50,15 @@
 //     "tails" :1,
 // "friends" : ["everything"]
 // }
-// ourdog["bark"] = "bhau-hau"
+// ourdog["bark"] = "bhau-hau"     //here a property named bark is added and assigned a value bhau bhau to it
+// ourdog.bark = "bhaw bhaw"            //sae but without using a square bracket
 // console.log(ourdog)
+
 // ourdog["friends"].push("anything") 
 // console.log(ourdog)
+
 // ---------------------------------------------------
+
 // function Bird(){
 //     this.name = "albert";
 //     this.color = "blue";
