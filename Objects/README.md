@@ -20,3 +20,4 @@ const cat = {
 - In this example, all the properties are stored as strings, such as name, legs, and tails. However, you can also use numbers as properties.  
 <br>
 
+- 

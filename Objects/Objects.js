@@ -89,7 +89,9 @@
 
 // console.log(Dog.sayName())
 
-// ---------------testing objects ----------------
+// ---------------Testing objects ---------------------
+
+
 // function checkObj(obj, checkProp) {
 //    if (obj.hasOwnProperty(checkProp)) {
 //       return obj[checkProp];
@@ -100,7 +102,7 @@
 // checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")
 
 
-// -----------manipulating complex objects------------
+// -----------Manipulating Complex Objects-------------
 
 // const ourMusic = [
 //     {
@@ -121,7 +123,7 @@
 // In the example above, "artist": "Daft Punk" is a property that has a key of artist and a value of Daft Punk.
 
 
-// ------verify ------------------------------------
+// ---------------------Verify -----------------------------
 
 // function Dog(name,color){
 //     this.name = name;
@@ -143,7 +145,7 @@
 // let verify = costa instanceof Bird;
 // console.log(verify)
 
-// -------Own properties---------------------------------
+// ----------------Own properties--------------------------
 
 // function Bird(name,color){
 //     this.name = name;
@@ -161,7 +163,7 @@
 // }
 // console.log(ownProp)
 
-// --------accessing nested objects-------------------------
+// -------- Accessing nested objects-------------------------
 
 // const myStorage = {
 //     "car": {
@@ -182,3 +184,30 @@
 // console.log(gloveboxContent) //maps
 
 // console.log(myStorage.car.inside["passenger seat"])
+
+// ---------------Accessing Nested Arrays-------------------
+// const myPlants = [
+//     {
+//       type: "flowers",
+//       list: [
+//         "rose",
+//         "tulip",
+//         "dandelion"
+//       ]
+//     },
+//     {
+//       type: "trees",
+//       list: [
+//         "fir",
+//         "pine",
+//         "birch"
+//       ]
+//     }
+//   ];
+  
+//   const secondTree = myPlants[1].list[1]; // pine
+//   console.table(myPlants);
+//   console.log(secondTree)
+
+//   const thirdTree = myPlants[0].list[2];
+//   console.log(thirdTree)
