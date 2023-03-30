@@ -76,15 +76,15 @@
 
 // -----------------------------------------------
 
-let laptop = {
-    cpu : "i3",
-    ram: 4,
-    brand :"Dell",
-    getConfig(){
-        let cpudetail = `intel core ${this.cpu}`
-        return cpudetail
-    }
-}
+// let laptop = {
+//     cpu : "i3",
+//     ram: 4,
+//     brand :"Dell",
+//     getConfig(){
+//         let cpudetail = `intel core ${this.cpu}`
+//         return cpudetail
+//     }
+// }
 // laptop.getConfig();
 // console.log(laptop.getConfig())
 // console.log(laptop.brand)

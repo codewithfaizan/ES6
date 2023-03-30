@@ -16,12 +16,12 @@
 // console.log(typeof(myObj.prop3))
 
 // --------accessing objects with variables------------
-const dogs = {
-    Fido : "Mutt",
-    Hunter : "Doberman",
-    Snoopue : "Beagle",
-    5 : 10
-}
+// const dogs = {
+//     Fido : "Mutt",
+//     Hunter : "Doberman",
+//     Snoopue : "Beagle",
+//     5 : 10
+// }
 
 // console.log(dogs)
 // const myDog = "Hunter";     // here a variable is declared myDog and the key Hunter is assigned to it 
@@ -36,12 +36,23 @@ const dogs = {
 // console.log(number)
 // console.log(myBreed)
 
+// let Bird = {
+//     name : "alex",
+//     color : "blue",
+//     numLegs : 2
+// }
+
+// console.log(typeof(Bird));
+// console.log(Bird.name)
+// console.log(Bird.color)
+// console.log(Bird.numLegs)
+
 // -------------updating an object's property ------
 
 // dogs.Hunter = "Scary Doberman";
 // console.log(dogs.Hunter)
-
 // console.log(dogs)
+
 // ----------------------- adding a property----------
 
 // const ourdog = {
@@ -65,33 +76,24 @@ const dogs = {
 //     this.numLegs = 2;
 // }
 // let Con = new Bird()
-
-// console.log(Con);
+// console.log("Con :",Con);
 
 // let Ren = new Bird()
-// console.log(Ren
+// console.log("Ren : ",Ren
 // )
+
 // -------------------------------------------------
 // some more exapmles
+
 // function Member(name,age) {
 //     this.name = name;
 //     this.age = age
 
 // }
-// /------------------------------------------
 // let Candidate1 = new Member("Ravi",32)
 // console.log(Candidate1.name, Candidate1.age)
+// console.log(Candidate1)
 // console.log(Candidate1.age)
-// let Bird = {
-//     name : "alex",
-//     color : "blue",
-//     numLegs : 2
-// }
-
-// console.log(typeof(Bird));
-// console.log(Bird.name)
-// console.log(Bird.color)
-// console.log(Bird.numLegs)
 
 // ---------------------------------------------------
 
@@ -99,24 +101,29 @@ const dogs = {
 //     name : "Tom",
 //     color:"white",
 //     numLegs :4,
-//     sayName : function()
-//     { return this.name + "has" + this.numLegs;}
+//     sayName : function()     //function is passed as property
+
+//     { return `${this.name} has ${this.numLegs} Legs`;}
        
 // }
-
+// console.log(Dog.hasOwnProperty("color"))
 // console.log(Dog.sayName())
 
 // ---------------Testing objects ---------------------
 
 
 // function checkObj(obj, checkProp) {
+
 //    if (obj.hasOwnProperty(checkProp)) {
+
 //       return obj[checkProp];
+      
 //     } else {
 //       return "Not Found";
 // }
 //   }
-// checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")
+  
+// console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift" ) )
 
 
 // -----------Manipulating Complex Objects-------------
@@ -228,3 +235,77 @@ const dogs = {
 
 //   const thirdTree = myPlants[0].list[2];
 //   console.log(thirdTree)
+
+// -----constructor-----------
+
+// class Vegetable {
+//     constructor (name){
+//         this.name = name
+//     }
+// }
+
+// let carrot = new Vegetable('carrot'); 
+// let potato = new Vegetable('potato')
+// console.log(carrot.name, potato.name)
+
+// -------------------------------------------------------
+
+// ----------------------using getter and setter---
+// You can obtain values from an object and set the value of a property within an object.
+
+// These are classically called getters and setters.
+
+// Getter functions are meant to simply return (get) the value of an 
+// object's private variable to the user without the user directly accessing the private variable.
+
+// Setter functions are meant to modify (set) the value of 
+// an object's private variable based on the value passed into the setter function. 
+// This change could involve calculations, or even overwriting the previous value completely.
+
+// class Book {
+//     constructor(author) {
+//       this._author = author;
+//     }
+//     // getter
+//     get writer() {                      //get function_name(){ return ...}
+//       return this._author;
+//     }
+//   // setter
+//   set writer(updatedAuthor) {       //set function_name(parameter){ using the paramter }
+//     this._author = updatedAuthor;
+//   }
+// }
+// const novel = new Book('anonymous');
+// // console.log(novel._author);
+// console.log(novel.writer);
+
+// novel.writer = 'newAuthor';
+// console.log(novel.writer);
+// -----------------------------------------------------------
+
+// class Thermostat {
+//     constructor(fahr) {
+//         this.fahr = fahr
+//         // console.log(fahr);      //76
+//     };
+//     get temperature(){
+//         return 5/9 *(this.fahr - 32)
+//     }
+//     set temperature(C){
+//         this.fahr = C*9.0/5+32
+//     }
+// }
+// const Thermos = new Thermostat(76);
+// // console.log(Thermos) // Thermostat{ fahr : 76}
+
+// let temp = Thermos.temperature; // 
+// console.log("temp1",temp)
+
+// Thermos.temperature = 26;
+
+// // console.log(temp)
+
+// temp = Thermos.temperature
+// console.log("temp2",temp)
+
+// ------------------------------------------------------------
