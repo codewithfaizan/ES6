@@ -89,3 +89,32 @@
 // easily check for the presence of an element on an array. indexOf() takes an element as a parameter, 
 // and when called, it returns the position, or index, of that element, or -1 if the element does not exist on the array.
 
+// The deep array is nested 2 levels deep. The deeper arrays are 3 levels deep. The deepest arrays are 4 levels, 
+// and the deepest-est? is 5.
+
+// let nestedArray = [
+//     ['deep'],
+//     [
+//       ['deeper'], ['deeper'] 
+//     ],
+//     [
+//       [
+//         ['deepest'], ['deepest']
+//       ],
+//       [
+//         [
+//           ['deepest-est?']
+//         ]
+//       ]
+//     ]
+//   ];
+
+//   console.table(nestedArray)
+
+// ┌─────────┬──────────────────────┬──────────────┐
+// │ (index) │          0           │      1       │
+// ├─────────┼──────────────────────┼──────────────┤
+// │    0    │        'deep'        │              │
+// │    1    │     [ 'deeper' ]     │ [ 'deeper' ] │
+// │    2    │ [ [Array], [Array] ] │ [ [Array] ]  │
+// └─────────┴──────────────────────┴──────────────┘
