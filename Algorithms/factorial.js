@@ -1,8 +1,18 @@
-// function factorialize(num) {
+// Factorialize a Number
+
+// Return the factorial of the provided integer.
+
+// If the integer is represented with the letter n, a factorial is the product 
+// of all positive integers less than or equal to n.
+
+// For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
+
+
+// / function factorialize(num) {
 //     let n =1;
-//    if(n>=0){
+  //  if(n>=0){
 //         for(let i = num; i > 0; i--){
-//   // console.log(`result:`,n *= i )  
+//   // console.log(`result: `,n *= i )  
 //   n*= i;  
 //    num =n;
 //       }
@@ -29,25 +39,16 @@
 
     
 // }
-// factorialize(10)
+// factorialize(10)       //working
 
-//------------------------------------------- ..----------/
-// function factorialize(num) {
-//     let product = 1;
-//     for (let i = 2; i <= num; i++) {
-//       product *= i;
-//     }
-//     return product;
-//   }
-  
-// console.log(  factorialize(0))
-  
-// =-----------------------------------------------------------------
+//-------------------------------------------------------------------------------/
 function factorialize(num) {
-    if (num === 0) {
-      return 1;
+    let product = 1;
+    for (let i = 2; i <= num; i++) {
+      product *= i;
     }
-    return num * factorialize(num - 1);
+    return product;
   }
   
-  console.log(factorialize(10))
+console.log(  factorialize(0))    // working ~ from freecodecamp help section
+  
