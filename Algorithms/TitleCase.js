@@ -7,5 +7,5 @@ function titleCase(str) {
      return Store.join(" ");
    }
    
-   let result = titleCase("I'm a little tea pot");
+   let result = titleCase("dil badal de");
    console.log(result)
