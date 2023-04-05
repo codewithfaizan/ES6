@@ -10,14 +10,15 @@ following function returns an array of strings (each representing a cup of
 a specific type of tea).
 */
 const getTea = (prepareTea, numOfCups) => {
-            //  function, parameter
+            //  (function, parameter)
   const teaCups = [];
 
   for(let cups = 1; cups <= numOfCups; cups += 1) {
-    const teaCup = prepareTea();
+    const teaCup = prepareTea();        //assigning function to a variable
+    // the return of that function is pushed in an array that has veen declared outside the loop
     teaCups.push(teaCup);
   }
-  return teaCups;
+  return teaCups;//returning the array
 };
 
 // Only change code below this line
