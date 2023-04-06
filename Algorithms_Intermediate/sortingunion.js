@@ -7,9 +7,10 @@
 function uniteUnique(arr) {
     let emptyArr = [];
     let refs = Object.values(arguments)
+    // console.log(refs.flat())
     // console.log(refs)
     for(let i = 0; i<refs.length; i++){
-        // console.log(refs[i])
+       
        return refs.flat().filter((item, ind, arr) => arr.indexOf(item) === ind)
       //  console.log(test)
     }
