@@ -194,3 +194,9 @@
 // 
 // However, you can use the ? character to change it to lazy matching. 
 // "titanic" matched against the adjusted regex of /t[a-z]*?i/ returns ["ti"].
+
+
+// ----------------------------------------------------------------------
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
