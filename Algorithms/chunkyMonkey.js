@@ -3,15 +3,19 @@
 //  and returns them as a two-dimensional array.
 
 function chunkArrayInGroups(arr, size) {
-    let newArr = [];
-     console.log(arr.length)
-    for(let i =0;i<arr.length; i+= size){
+    let newArr = [];    //empty array ku declare kardiye 
+
+    //  console.log(arr.length)   
+
+    for(let i = 0; i<arr.length; i+= size){
       newArr.push(arr.slice(i, i + size));
-    }
+    } 
+    console.log(newArr)
+
     // let nikaleso 
   
     return newArr;
   }
   
-  let result = chunkArrayInGroups(["a", "b", "c", "d"], 2);
-  console.log(result)
+  let result = chunkArrayInGroups(["a", "b", "c", "d"], 1);
+  // console.log(result)
