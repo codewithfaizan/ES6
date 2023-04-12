@@ -4,12 +4,15 @@
 //     { name: 'camperCat', age: 10 }
 //   ];
   
-//   const names = users.map(user => user.name);
+//   const names = users.map(user => user.age);
 //   console.log(names);
-//  //   The console would display the value [ 'John', 'Amy', 'camperCat' ].
+ //   The console would display the value [ 'John', 'Amy', 'camperCat' ].
 // ----------------------------------------------------------------------------
 
-// The watchList array holds objects with information on several movies. Use map on watchList to assign a new array of objects to the ratings variable. Each movie in the new array should have only a title key with the name of the film, and a rating key with the IMDB rating.
+// The watchList array holds objects with information on several movies. 
+// Use map on watchList to assign a new array of objects to the ratings variable. 
+// Each movie in the new array should have only a title key with the name of the film, 
+// and a rating key with the IMDB rating.
 
 // The global variable
 const watchList = [
@@ -135,4 +138,4 @@ const watchList = [
   
   // Only change code above this line
   
-  console.log(JSON.stringify(ratings));
+  console(JSON.stringify(ratings));
