@@ -83,14 +83,14 @@ class Bird {
         this.numLegs = 2;
     }
 }
-// let Con = new Bird()
-// console.log("Con :",Con);
+let Con = new Bird()
+console.log("Con :",Con);
 
-// let Ren = new Bird()
-// console.log("Ren :",Ren)
+let Ren = new Bird()
+console.log("Ren :",Ren)
 
-// let Jen = new Bird;
-// console.log("Jen :",Jen)
+let Jen = new Bird;
+console.log("Jen :",Jen)
 // -------------------------------------------------
 
 
